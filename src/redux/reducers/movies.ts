@@ -1,4 +1,4 @@
-import {MOVIES_LOADED} from "../types"
+import {ERROR_RECEIVED, MOVIES_LOADED} from "../types"
 
 interface ActionParams {
     type: string,
@@ -16,6 +16,11 @@ export const movies = (state = initialState, {type, payload}: ActionParams) => {
             return {
                 ...state,
                 movies: payload,
+                loading: false
+            }
+        case ERROR_RECEIVED:
+            return {
+                ...state,
                 loading: false
             }
         default:

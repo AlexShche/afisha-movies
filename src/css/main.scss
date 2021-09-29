@@ -1,8 +1,37 @@
+#root {
+  height: 100%;
+}
+
+.error {
+  padding: 30px;
+  text-align: center;
+}
+
+.loading {
+
+  .anticon-loading {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    height: 30px;
+    width: 30px;
+
+    svg {
+      font-size: 30px;
+      fill: #6bb1f1;
+    }
+  }
+}
+
 .App {
   padding: 20px;
 }
 
 .card {
+  padding: 0 10px;
 
   .card-rate {
     font-weight: 700;
@@ -13,6 +42,14 @@
     top: 8px;
     border-radius: 4px;
     color: #fff;
+
+    &.card-high {
+      background: #47c647;
+    }
+
+    &.card-middle {
+      background: #eaa11c;
+    }
   }
 
   .card-about {
@@ -43,7 +80,7 @@
       }
     }
 
-    .card-type {
+    .card-genre {
       font-size: 12px;
       color: #737373;
       font-weight: 500;
@@ -53,7 +90,8 @@
   h3 {
     font-weight: 700;
     margin-top: 4px;
-    margin-bottom: 2px;
+    margin-bottom: 6px;
+    line-height: 20px;
   }
 
   .card-image {
@@ -72,12 +110,26 @@
 
     img {
       cursor: pointer;
-      max-height: 270px;
+      max-height: 244px;
       height: auto;
-      min-height: 270px;
+      min-height: 244px;
       object-fit: cover;
       width: 100%;
       border-radius: 6px;
     }
+  }
+}
+
+.movies {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.slick-arrow {
+
+  svg {
+    font-size: 22px;
+    fill: #000;
   }
 }

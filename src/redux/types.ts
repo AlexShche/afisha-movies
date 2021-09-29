@@ -1,1 +1,2 @@
 export const MOVIES_LOADED = "MOVIES_LOADED"
+export const ERROR_RECEIVED = "ERROR_RECEIVED"
